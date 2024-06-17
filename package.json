@@ -1,0 +1,20 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LaneNathan/Social-Network-Api.git"
+  },
+  "author": "Nathan Lane",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaneNathan/Social-Network-Api/issues"
+  },
+  "homepage": "https://github.com/LaneNathan/Social-Network-Api#readme"
+}
