@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/LaneNathan/Social-Network-Api/issues"
   },
-  "homepage": "https://github.com/LaneNathan/Social-Network-Api#readme"
+  "homepage": "https://github.com/LaneNathan/Social-Network-Api#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.3"
+  }
 }
