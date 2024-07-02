@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/LaneNathan/Social-Network-Api#readme",
   "dependencies": {
-    "express": "^4.19.2",
-    "mongoose": "^8.4.3"
+    "express": "^4.17.1",
+    "mongoose": "^7.0.2"
   }
 }
