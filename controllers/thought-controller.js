@@ -48,6 +48,7 @@ const thoughtController = {
             );
 
             if(!dbUserData){
+                await Thought.findByIdAndDelete(dbThought._id);
                 return res.status(404).json({message: 'This thought doesnt have a user.'});
             }
             res.json({message: 'Thought was created!!'});
