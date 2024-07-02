@@ -53,21 +53,25 @@ const thoughtController = {
             }
             res.json({message: 'Thought was created!!'});
         }catch(error){
-            console.log(error);
+            console.log('Error creating thought:',error);
             res.status(500).json(error);
         }
     },
 
     async updateThought(req,res){
+        try{
         const dbThoughts = await Thought.findOneAndUpdate({_id: req.params.thoughtId},{$set: req.body},{runValidators: true, new: true});
+    
 
         if(!dbThoughts){
             return res.status(404).json({ message: 'No thought matches this id.'});
         }
 
         res.json(dbThoughts);
+    }catch(error){
         console.log(error);
         res.status(500).json(error);
+    }
     },
 
     async deleteThought(req,res){
