@@ -29,10 +29,10 @@ const thoughtSChema = new Schema(
     }
 );
 
-thoughtsSChema.virtual('reactionCount').get(function(){
+thoughtSChema.virtual('reactionCount').get(function(){
     return this.reactions.length;
 });
 
-const Thought = model('Thought', thoughtsSChema);
+const Thought = model('Thought', thoughtSChema);
 
 module.exports= Thought;
