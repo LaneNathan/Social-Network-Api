@@ -31,6 +31,14 @@ const thoughtController = {
 
     async createThought(req,res){
         try{
+            console.log('Request Body:', req.body);
+
+            const userId = req.body.userId;
+            if (!userId || !Types.ObjectId.isValid(userId)) {
+                return res.status(400).json({ message: 'Invalid or missing user ID.' });
+            };
+
+            const userObjectId = new Types.ObjectId(userId);
             const dbThoughts = await Thought.create(req.body);
 
             const dbUserData = await User.findOneAndUpdate(
