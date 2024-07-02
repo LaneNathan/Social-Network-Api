@@ -46,4 +46,4 @@ This is a social network API built using Node.js, Express, and MongoDB. It allow
 ![Static Badge](https://img.shields.io/badge/license-MIT-blue)
 
 ## Example Video
-[Example video](https://watch.screencastify.com/v/M3xuUqyv8hozCiNLzF9D)
+[Example video](https://drive.google.com/file/d/12KM_PovXWpSG3rGOz46dEobodWv7rqbs/view)
