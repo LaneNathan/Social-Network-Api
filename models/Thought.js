@@ -8,12 +8,12 @@ const thoughtSChema = new Schema(
             type: String,
             required: 'Please leave a thought',
             minlength: 1,
-            maxlength: 300
+            maxlength: 300,
         },
         createdAt: {
             type: Date,
             default: Date.now,
-            get: timestamp => dateFormatting(timestamp)
+            get: timestamp => dateFormatting(timestamp),
         },
         username: {
             type: String,
@@ -23,9 +23,9 @@ const thoughtSChema = new Schema(
     },
     {
         toJSON: {
-            getters: true
+            getters: true,
         },
-        id: false
+        id: false,
     }
 );
 
