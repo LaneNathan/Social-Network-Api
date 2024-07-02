@@ -1,4 +1,5 @@
 const {Thought, User} = require('../models');
+const {Types} = require('mongoose');
 
 const thoughtController = {
     async getThoughts(req, res){
